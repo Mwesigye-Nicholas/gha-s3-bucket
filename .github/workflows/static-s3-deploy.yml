@@ -15,6 +15,6 @@ jobs:
       - name: Code static code to S3
         run: |
           aws s3 sync ../ s3://nicholas-gha-static-website-demo/ \
-          --exclude "*"
+          --exclude "*" \
           --include "index.html"
      
